@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Calculator Project</h1>
+        <div class="result" id="result">0</div>
+        <div class="input-group">
+            <label for="">First Number</label>
+            <input type="number" id="firstNum">
+            <small class="error" id="numOneError">First Number is required</small>
+        </div>
+        <div class="input-group">
+            <label for="">Second Number</label>
+            <input type="number" id="secondNum">
+            <small class="error" id="numTwoError">Second Number is required</small>
+       </div>
+        <select name="" id="operator" class="input-group">
+            <option value="empty">Choose an Operator</option>
+            <option value="add">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="division">/</option>
+        </select>
+        <div class="btn-group">
+            <button id="btn">Calculate</button>
+        </div>
+    </div>
     
 </body>
+<script src="./app.js"></script>
 </html>
